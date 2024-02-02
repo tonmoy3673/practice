@@ -1,6 +1,6 @@
 const Users = () => {
   return (
-    <div>
+    <div className="text-center">
       <h3>This is Users Page</h3>
     </div>
   );

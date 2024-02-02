@@ -1,6 +1,6 @@
 const Todos = () => {
   return (
-    <div>
+    <div className="text-center">
       <h3>This is Todos</h3>
     </div>
   );
