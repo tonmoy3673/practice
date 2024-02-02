@@ -7,6 +7,7 @@ import Posts from "./component/Posts/Posts.jsx";
 import Todos from "./component/Todos/Todos.jsx";
 import Users from "./component/Users/Users.jsx";
 import Home from "./component/Home/Home.jsx";
+import SinglePost from "./component/Posts/SinglePost.jsx";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
       {
         path: "/posts",
         element: <Posts />,
+      },
+      {
+        path: "/posts/:id",
+        element: <SinglePost />,
       },
       {
         path: "/todos",
