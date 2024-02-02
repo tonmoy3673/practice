@@ -8,6 +8,7 @@ import Todos from "./component/Todos/Todos.jsx";
 import Users from "./component/Users/Users.jsx";
 import Home from "./component/Home/Home.jsx";
 import SinglePost from "./component/Posts/SinglePost.jsx";
+import SingleTodo from "./component/Todos/SingleTodo.jsx";
 
 const router = createBrowserRouter([
   {
@@ -30,6 +31,12 @@ const router = createBrowserRouter([
         path: "/todos",
         element: <Todos />,
         loader: () => fetch("https://jsonplaceholder.typicode.com/todos"),
+      },
+      {
+        path: "/todos/:id",
+        element: <SingleTodo />,
+        loader: ({ params }) =>
+          fetch(`https://jsonplaceholder.typicode.com/todos/${params.id}`),
       },
       {
         path: "/users",
