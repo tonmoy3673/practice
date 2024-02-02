@@ -29,6 +29,7 @@ const router = createBrowserRouter([
       {
         path: "/todos",
         element: <Todos />,
+        loader: () => fetch("https://jsonplaceholder.typicode.com/todos"),
       },
       {
         path: "/users",
