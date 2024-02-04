@@ -11,14 +11,16 @@ const Users = () => {
         Total Users : {users.length}
       </h3>
 
-      <div className="grid md:grid-cols-3 sm:grid-cols-2 py-10 px-12 gap-10">
-        {users?.map((user) => (
-          <User key={user.id} user={user} />
-        ))}
-      </div>
+      <div className="flex w-9/12 justify-between">
+        <div className="grid md:grid-cols-3 sm:grid-cols-2 py-10 px-12 gap-10">
+          {users?.map((user) => (
+            <User key={user.id} user={user} />
+          ))}
+        </div>
 
-      <div className="text-center text-lg">
-        <h2>Manage Users</h2>
+        <div className=" text-lg py-10">
+          <h2 className="text-green-500">Manage Users</h2>
+        </div>
       </div>
     </div>
   );
