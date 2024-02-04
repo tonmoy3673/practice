@@ -11,7 +11,7 @@ const Users = () => {
         Total Users : {users.length}
       </h3>
 
-      <div>
+      <div className="grid md:grid-cols-3 sm:grid-cols-2 py-10 px-12 gap-10">
         {users?.map((user) => (
           <User key={user.id} user={user} />
         ))}
