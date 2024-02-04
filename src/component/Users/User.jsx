@@ -7,7 +7,7 @@ const User = (user) => {
       <h3>ID : {id}</h3>
       <h3>Name : {name}</h3>
       <div className="py-2">
-        <Link>
+        <Link to={`/user/${id}`}>
           <button className="bg-blue-500 p-2 rounded-md hover:bg-orange-500">
             Details
           </button>

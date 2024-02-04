@@ -9,7 +9,7 @@ import Users from "./component/Users/Users.jsx";
 import Home from "./component/Home/Home.jsx";
 import SinglePost from "./component/Posts/SinglePost.jsx";
 import SingleTodo from "./component/Todos/SingleTodo.jsx";
-import User from "./component/Users/User.jsx";
+import SingleUser from "./component/Users/SingleUser.jsx";
 
 const router = createBrowserRouter([
   {
@@ -46,7 +46,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/user/:id",
-        element: <User />,
+        element: <SingleUser />,
         loader: ({ params }) =>
           fetch(`https://jsonplaceholder.typicode.com/users/${params.id}`),
       },
